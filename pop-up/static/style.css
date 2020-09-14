@@ -1,0 +1,48 @@
+html, body {
+    font-size: 20px;
+}
+textarea:focus, input:focus{
+    color: #18c900;
+}
+input, select, textarea{
+    font-size: 14px;
+    padding: 10px;
+    color: #18c900;
+}
+
+.button {
+    font-size: 18px;
+    border: 0;
+    background-color: #18c900;
+    color: #ffffff;
+    border-radius: 2em;
+}
+
+.button:hover{
+    background-color:#268c41;
+}
+
+.button:after{
+    background-color:#268c41;
+    transform: translateY(2px);
+}
+
+.notification {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid;
+    color: #18c900;
+    padding: 0px 40px 40px 40px;
+    position: fixed;
+    margin-left: 38%;
+    margin-right: 45%;
+    margin-top: 5%
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}

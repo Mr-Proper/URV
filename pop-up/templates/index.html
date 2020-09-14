@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link  rel="stylesheet"  href="static/style.css">
+    <title>parser</title>
+</head>
+<body>
+    <main>
+        <video autoplay muted loop id="myVideo" id="myVideo">
+            <source src="static/background.mp4" type="video/mp4">
+        </video>
+        <div hidden class="notifications">
+            <h2>Last Message:</h2>
+            <p class="notification_header">{{title}}</p>
+            <p class="notification_main">{{content}}</p>
+            <p class="notification_repeat">{{repeat}}/p>
+        </div>
+        <div class="notification">
+        <form action="#" method="post">
+            <h3>Title:</h3>
+            <p><input type="text" name="title"  placeholder="Title" value= "{{nm if nm}}"/></p>
+            <h3>Content:</h3>
+            <p><input type= "text" name= "content" placeholder="Content" value="{{key if key}}"/></p>
+<!--            <h3>Repeat:</h3>
+            <p><input type= "number" name= "repeat" placeholder="Repeat" value="{{repeat if repeat}}"/></p> -->
+            <input class="button" type="submit" value="Send notification"/>
+        </form>
+        </div>
+    </main>
+</body>
+</html>
